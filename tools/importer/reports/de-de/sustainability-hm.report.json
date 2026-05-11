@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www2.hm.com/de_de/sustainability-hm.html",
+  "path": "de-de/sustainability-hm",
+  "timestamp": "2026-05-11T13:49:23.217Z",
+  "title": "Nachhaltigkeit bei H&M | H&M",
+  "template": "sustainability-page",
+  "blocks": [
+    "cards-teaser",
+    "cards-teaser"
+  ]
+}
