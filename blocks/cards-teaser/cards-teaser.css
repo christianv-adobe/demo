@@ -1,0 +1,88 @@
+.cards-teaser {
+  margin-top: 32px;
+}
+
+.cards-teaser > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (width >= 600px) {
+  .cards-teaser > ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cards-teaser > ul > li {
+  border: none;
+  background-color: var(--background-color);
+}
+
+.cards-teaser .cards-teaser-card-body {
+  padding: 12px 0;
+}
+
+.cards-teaser .cards-teaser-card-body h2,
+.cards-teaser .cards-teaser-card-body h3 {
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.cards-teaser .cards-teaser-card-body p {
+  margin: 0;
+}
+
+.cards-teaser .cards-teaser-card-body a:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.cards-teaser .cards-teaser-card-body a:hover {
+  text-decoration: underline;
+}
+
+.cards-teaser .cards-teaser-card-body a::after {
+  content: "\2192";
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.cards-teaser .cards-teaser-card-body .button-wrapper {
+  margin: 0;
+}
+
+.cards-teaser .cards-teaser-card-body a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.cards-teaser .cards-teaser-card-image {
+  line-height: 0;
+}
+
+.cards-teaser > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
