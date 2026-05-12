@@ -20,9 +20,17 @@ header nav {
 
 header nav[aria-expanded="true"] {
   overflow-y: auto;
-  min-height: 100dvh;
   flex-wrap: wrap;
   align-content: flex-start;
+}
+
+@media (width < 900px) {
+  header nav[aria-expanded="true"] {
+    position: fixed;
+    inset: 0;
+    background-color: var(--background-color);
+    z-index: 10;
+  }
 }
 
 @media (width >= 900px) {
