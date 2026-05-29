@@ -2,6 +2,12 @@
   margin-top: 32px;
 }
 
+.cards-teaser:not([data-block-status="loaded"]) {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
 .cards-teaser > ul {
   list-style: none;
   margin: 0;
@@ -14,6 +20,10 @@
 @media (width >= 600px) {
   .cards-teaser > ul {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cards-teaser > ul > li img {
+    max-height: 500px;
   }
 }
 
